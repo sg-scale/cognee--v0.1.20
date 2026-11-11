@@ -71,7 +71,7 @@ jobs:
     needs: publish_docker_to_ecr
     steps:
       - name: Trigger deployment in the infrastructure
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.PAT_FOR_CROSS_REPOS_CICD_TRIGGERING }}
           script: |
