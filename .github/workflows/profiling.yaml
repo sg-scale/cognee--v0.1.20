@@ -9,7 +9,7 @@ jobs:
     steps:
     # Checkout the code from the repository with full history
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         fetch-depth: 0  # Fetch all history so we can checkout any commit
 
