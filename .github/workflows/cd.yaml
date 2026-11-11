@@ -40,7 +40,7 @@ jobs:
         run: echo "The stage is ${{ steps.set-env.outputs.stage }}"
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           role-to-assume: ${{ env.AWS_ROLE_DEV_CICD }}
           aws-region: eu-west-1
